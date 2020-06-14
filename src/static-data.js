@@ -4,6 +4,18 @@ const faker = require("faker"); // faker is used for generating random fake data
 const _ = require("lodash"); // lodash is a utility lib for Javascript
 
 const users = generateUsers(10);
+
+// Sample Objects:
+// contacts: {
+//   5LbqNTiTCq: {
+//     email: "Trisha.Bauch@gmail.com"
+//     name: "Aiden Schultz"
+//     profile_pic: "https://s3.amazonaws.com/uifaces/faces/twitter/Stievius/128.jpg"
+//     status: "They were lost without the affable rat that composed their snail."
+//     user_id: "5LbqNTiTCq"
+//   }
+// }
+
 export const contacts = _.mapKeys(users, "user_id");
 export const getMessages = messagesPerUser => {
   let messages = {};
