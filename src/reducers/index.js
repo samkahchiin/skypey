@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import user from './user';
 import contacts from './contacts';
+import activeUserId from './activeUserId';
 
 // combineReducers takes in an object => shape is exactly like the state object of the application
 // NOTE: When using combineReducers, the value returned from each reducer is not the state of the application.
@@ -8,5 +9,6 @@ import contacts from './contacts';
 
 export default combineReducers({
   user,
-  contacts
+  contacts,
+  activeUserId
 });
