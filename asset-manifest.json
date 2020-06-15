@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/skypey/static/css/main.23db451c.chunk.css",
+    "main.js": "/skypey/static/js/main.96a2d0be.chunk.js",
+    "main.js.map": "/skypey/static/js/main.96a2d0be.chunk.js.map",
+    "runtime-main.js": "/skypey/static/js/runtime-main.bbe2af04.js",
+    "runtime-main.js.map": "/skypey/static/js/runtime-main.bbe2af04.js.map",
+    "static/js/2.c0824a03.chunk.js": "/skypey/static/js/2.c0824a03.chunk.js",
+    "static/js/2.c0824a03.chunk.js.map": "/skypey/static/js/2.c0824a03.chunk.js.map",
+    "index.html": "/skypey/index.html",
+    "precache-manifest.cfcf1d12f3380a2b1d9ec0968da92b00.js": "/skypey/precache-manifest.cfcf1d12f3380a2b1d9ec0968da92b00.js",
+    "service-worker.js": "/skypey/service-worker.js",
+    "static/css/main.23db451c.chunk.css.map": "/skypey/static/css/main.23db451c.chunk.css.map",
+    "static/js/2.c0824a03.chunk.js.LICENSE.txt": "/skypey/static/js/2.c0824a03.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbe2af04.js",
+    "static/js/2.c0824a03.chunk.js",
+    "static/css/main.23db451c.chunk.css",
+    "static/js/main.96a2d0be.chunk.js"
+  ]
+}
