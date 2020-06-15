@@ -5,6 +5,6 @@ export default function activeUserId(state = null, action) {
     case SET_ACTIVE_USER_ID:
       return action.payload;
     default:
-      return state
+      return state;
   }
 };
