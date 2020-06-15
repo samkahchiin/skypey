@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header';
 import store from '../../store';
 import Chats from '../Chats/Chats';
 import MessageInput from '../MessageInput/MessageInput';
+import './ChatWindow.css';
 import _ from 'lodash';
 
 const ChatWindow = ({ activeUserId }) => {
