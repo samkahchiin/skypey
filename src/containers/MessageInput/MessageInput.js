@@ -1,6 +1,6 @@
 import React from 'react';
 import store from '../../store';
-import { setTypingValue } from '../../action';
+import { setTypingValue, sendMessage } from '../../action';
 import './MessageInput.css';
 
 const MessageInput = ({ value }) => {
@@ -8,9 +8,15 @@ const MessageInput = ({ value }) => {
     store.dispatch(setTypingValue(e.target.value));
   };
 
+  function handleSubmit (e) {
+    e.preventDefault();
+    const { typing, activeUserId } = store.getState();
+    store.dispatch(sendMessage(typing, activeUserId));
+  }
+
   return (
-    <form className='Message'>
-      <input type='text'
+    <form className='Message' onSubmit={handleSubmit}>
+      <input
         className='Message__input'
         onChange={handleChange}
         value={value}
