@@ -1,0 +1,42 @@
+/* flex-grow : 1;    ➜ The div will grow in same proportion as the window-size
+flex-shrink : 1;  ➜ The div will shrink in same proportion as the window-size
+flex-basis : 0;   ➜ The div does not have a starting value as such and will
+                     take up screen as per the screen size available for
+                     e.g:- if 3 divs are in the wrapper then each div will take 33%. */
+
+.Chats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+  margin: 0 auto;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.Chat {
+  margin: 1rem 0;
+  padding: 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #1986d8, #7b9cc2);
+  max-width: 90%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Chat.is-user-msg {
+  /* it will give the remaining space to the left margin */
+  /* if combined with margin-right auto, it will center the element */
+  margin-left: auto;
+  background: #2b2c33;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@@media (min-width: 576px) {
+  .Chat {
+    max-width: 60%;
+  }
+}
